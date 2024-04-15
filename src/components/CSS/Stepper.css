@@ -1,0 +1,72 @@
+ /* Stepper.css */
+
+ .metro-map {
+    position: relative;
+    width: 90%;
+    height: 350px;
+    padding-left: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-top: -50px;
+  }
+
+  .metro-map h3 {
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+  
+  .station {
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .station:hover {
+    background-color: #aaa;
+  }
+  
+  .active {
+    fill: #d345a4; 
+  }
+  
+  .line-chart {
+    width: 95%;
+    height: 90%;
+    margin-left: -5px;
+    margin-top: 3px;
+    /* background-color: #4caf50; */
+  }
+  
+  .line {
+    stroke: #d4d4d4; 
+    stroke-width: 2;
+  }
+  
+  /* .completed {
+    stroke: #4caf50; 
+  }
+   */
+
+  /* Tool Tips */
+
+  /* Add this to your CSS */
+.info-button {
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  background-color: #555;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  /* display: ${showTooltip ? 'block' : 'none'}; */
+}
+
+.checkp{
+  color: rgb(0, 0, 0);
+}

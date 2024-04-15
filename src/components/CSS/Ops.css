@@ -1,0 +1,408 @@
+.operational-chargeback-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 3000px;
+    margin-left: 270px;
+    /* background-color: aquamarine; */
+  }
+
+
+
+  .dropdown-vendor-invoice-ops{
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+
+  .dropdown-inventory-invoice-ii{
+    margin-left: 850px;
+    max-width: 250px;
+    min-height: 10px;
+    margin-top: -55px;
+    /* background-color: aqua; */
+  }
+  
+  
+  .dropdown-vendor-oc{
+    background-color: aqua;
+    width: 1200px;
+    margin-top: 10px;
+    min-height: 30px;
+    margin-left: 18px;
+  }
+  
+  .dropdown-inventory-oc{
+    margin-left: 1050px;
+    min-height: 30px;
+    width: 180px;
+  }
+
+  .dropdown-inventory-ops-1{
+    /* background-color: aquamarine; */
+    min-height: 30px;
+    width: 180px;
+    margin-left: 630px;
+    margin-top: 18px;
+  }
+
+  .dropdown-inventory-ops-2{
+    /* background-color: aquamarine; */
+    min-height: 30px;
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 18px;
+  }
+  
+  .split-1{
+    /* background-color: aqua; */
+    width: 99%;
+  }
+  
+  
+  
+  
+  .itemized-cards-oc{
+    width: 96%;
+    min-width: 250px;
+    min-height: 260px;
+    /* margin: 25px; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  
+  .prev-table-oc{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-top: 35px;
+    text-align: left;
+    /* background-color: aqua; */
+  }
+  
+  
+  
+  
+  .prev-table-oc h2{
+  color: black;
+  margin-left: 20px;
+  margin-top: 50px;
+  /* background-color: bisque; */
+  width: 680px;
+  }
+  
+  
+  
+  .content-table-oc {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 100%;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  
+  }
+  
+  .content-table-oc thead tr {
+    background-color: #ebebeb;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  
+  .content-table-oc th,
+  .content-table-oc td {
+    padding: 25px 35px;
+    /* border: 1px solid black; */
+  }
+  
+  .content-table-oc tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table-oc tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: black;
+  }
+  
+  .content-table-oc tbody tr:nth-of-type(odd){
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .content-table-oc tbody tr.active-row-c {
+    font-weight: bold;
+    color: #009879;
+  }
+  
+  .table-container-oc{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .oc-heading-box{
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+  }
+  
+  .oc-heading-box-1{
+    /* background-color: #009879; */
+    margin-left: 5px;
+  }
+  
+  .oc-heading-box-2{
+    /* background-color: rgb(255, 0, 255); */
+    background-color: #ffffff;
+    margin-top: 115px;
+    border-radius: 5px;
+    width: 1000px;
+    margin-left: -85px;
+  }
+  
+  .split{
+    color: black;
+    /* background-color: #009879; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 80px;
+  }
+  
+  .ops-csplit-option1{
+    width: 200px;
+    margin-top: 18px;
+    margin-left: 40px;
+  }
+  
+  .ops-csplit-option2{
+    width: 200px;
+    margin-top: 18px;
+    margin-left: 20px;
+  }
+  
+  
+  .content-table-split {
+    border-collapse: collapse;
+    margin: 25px 15px;
+    font-size: 0.9em;
+    min-width: 98%;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  
+  }
+  
+  .content-table-split thead tr {
+    background-color: #ebebeb;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  
+  .content-table-split th,
+  .content-table-split td {
+    padding: 32px 35px;
+    border: 1px solid black;
+  }
+
+  .content-table-split tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table-split tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: black;
+  }
+  
+  .content-table-split tbody tr:nth-of-type(odd){
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .content-table-split tbody tr.active-row-c {
+    font-weight: bold;
+    color: #009879;
+  }
+  
+  .split-1{
+    margin-left: 20px;
+    /* background-color: #009879; */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+  }
+  .split-1 h2 {
+    color: black;
+    margin-left: 10px;
+  }
+  
+  .dropdown-inventory-oc-1{
+    margin-top: 13px;
+    margin-left: 640px;
+  }
+  
+  .dropdown-inventory-oc-2{
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+
+  .asin-split h2 {
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+
+  .asin-split-dd-1{
+    display: flex;
+    flex-direction: row;
+    /* background-color: #009879; */
+  }
+
+  .asin-split-dd-2{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dd-1{
+    margin-left: 23px;
+    width: 280px;
+  }
+  .dd-2{
+    margin-left: 25px;
+    width: 280px;
+  }
+  .dd-3{
+    margin-left: 25px;
+    width: 280px;
+  }
+
+
+  .search-box-asin-ops-split{
+    margin-left: 20px;
+    width: 280px;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+  }
+
+
+  .asin-split-dd-2{
+    margin-top: 20px;
+    width: 50%;
+  }
+
+  .dd2-1{
+    width: 280px;
+    margin-top: 5px;
+    margin-left: 23px
+  }
+
+  .dd2-2{
+    width: 280px;
+    margin-top: 5px;
+    margin-left: 25px
+  }
+
+  .button-asin-split-1{
+    width: 150px;
+    min-height: 30px;
+    border-radius: 5px;
+    margin-left: 25px;
+    color: #ffffff;
+    border-color: rgb(200, 202, 202);
+    cursor: pointer;
+    background-color: #a62230;
+  }
+
+  .button-asin-split-2{
+    width: 150px;
+    min-height: 30px;
+    margin-left: 25px;
+    border-radius: 5px;
+    color: #ffffff;
+    border-color: rgb(200, 202, 202);
+    cursor: pointer;
+    background-color: #a62230;
+  }
+
+  .button-asin-split-3{
+    width: 150px;
+    min-height: 30px;
+    margin-left: 25px;
+    border-radius: 5px;
+    color: #ffffff;
+    border-color: rgb(200, 202, 202);
+    box-shadow: black;
+    cursor: pointer;
+    background-color: #a62230;
+  }
+
+  .three-split-buttons{
+    margin-left: 610px;
+    margin-top: -40px;
+  }
+
+  .asin-split-table{
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  .switch-fractions{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: -10px;
+  }
+
+  .actual-amount{
+    margin-left: 23px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .actual-units{
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: underline solid rgb(147, 147, 147);
+  }
+
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    border: 1px solid black; /* Black border for each cell */
+    padding: 8px;
+    text-align: left;
+  }
+
+  .styled-table tr{
+    border: 1px solid black;
+  }
+  
+  .even-row {
+    background-color: #f2f2f2; /* Light gray for even rows */
+  }
+  
+  /* Add this class for odd rows if you haven't */
+  .odd-row {
+    background-color: white; /* White background for odd rows */
+  }
+
+  .styled-table th {
+    background-color: #ededed;
+  }

@@ -1,0 +1,18 @@
+.coming-soon-container {
+    display: flex;
+    width: 80%;
+    position: relative;
+    margin-left: 250px;
+    top: 100px;
+    justify-content: center;
+    height: 20px;
+    color: #b40d0d;
+  }
+  
+  .content-container {
+    text-align: center;
+    /* background-color: aqua; */
+    width: 90%;
+    height: 10px;
+    margin-top: 100px;
+  }

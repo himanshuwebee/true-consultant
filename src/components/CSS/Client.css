@@ -1,0 +1,385 @@
+.client-container{
+    /* background: linear-gradient(rgb(246, 221, 225), rgb(255, 198, 207), #f4f4f4); */
+    width: 82%;
+    margin-left: 260px;
+    min-height: 1500px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    position: relative;
+    top: 40px;
+    font-family: "Inter", sans-serif;
+}
+
+.headin-back{
+    /* background-color: #f4f4f4; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 80px;
+    border-radius: 20px;
+}
+
+.back-arrow{
+    margin-top: 15px;
+    margin-right: -60px;
+    cursor: pointer;
+}
+
+.headin-back h1 {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+/* 1st Container CSS */
+
+.client-container-1{
+    width: 95%;
+    min-height: 1000px;
+    margin-top: 70px;
+    margin-left: 30px;
+    background-color: white;
+    background: linear-gradient(rgb(223, 239, 252), rgb(136, 217, 244), #f4f4f4);
+    border-radius: 20px;
+}
+
+.client-first-container{
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+    position: relative;
+    top: 20px;
+}
+
+.Org-name{
+    width: 35%;
+}
+
+.Org-name h4 {
+    margin-left: 40px;
+}
+
+.Org-name-please{
+    width: 300px;
+    height: 33px;
+    margin-left: 35px;
+    border-radius: 4px;
+    border-color: rgb(239, 239, 239);
+}
+
+
+.Vc-name{
+    width: 35%;
+}
+
+.Vc-name h4 {
+    margin-left: 18px;
+}
+
+.AmazonVc-DD{
+    width: 350px;
+    margin-left: 10px;
+}
+
+
+.Market-name{
+    width: 35%;
+    /* margin-left: 10px; */
+}
+
+.Market-name h4 {
+    margin-left: 40px;
+}
+
+.Market-name-please{
+    width: 300px;
+    height: 33px;
+    margin-left: 35px;
+    border-radius: 4px;
+    /* border-color: #c1c1c1; */
+    border-color: rgb(245, 245, 245);
+}
+
+
+/* 2nd Container */
+
+
+.client-second-container{
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+    margin-top: 60px;
+}
+
+.Acc-name{
+    width: 35%;
+}
+
+.Acc-name h4 {
+    margin-left: 38px;
+}
+
+
+.AccManager-DD{
+    width: 310px;
+    margin-left: 35px;
+}
+
+
+.Customer-name{
+    width: 35%;
+}
+
+.Customer-name h4 {
+    margin-left: 40px;
+}
+
+.AmazonVc-DD{
+    width: 350px;
+    margin-left: 10px;
+}
+
+
+.Customer-name-1{
+    width: 35%;
+}
+
+.Customer-name-1 h4 {
+    margin-left: 20px;
+}
+
+.Customer-name-please{
+    width: 300px;
+    height: 33px;
+    margin-left: 35px;
+    border-radius: 4px;
+    border-color: rgb(239, 239, 239);
+}
+
+.Customer-name-please-1{
+    width: 345px;
+    height: 33px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border-color: rgb(239, 239, 239);
+}
+
+
+/* 3rd Container */
+
+.client-third-container{
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+    margin-top: 60px;
+}
+
+
+
+.Calendar-start-date{
+    width: 300px;
+    height: 33px;
+    margin-left: 35px;
+    border-radius: 4px;
+    border-color: rgb(239, 239, 239);
+}
+
+.Calendar-start-date-1{
+    width: 350px;
+    height: 33px;
+    margin-left: 8px;
+    border-radius: 4px;
+    border-color: rgb(239, 239, 239);
+}
+
+
+
+.Module-name{
+    width: 35%;
+}
+
+.Module-name h4 {
+    margin-left: 38px;
+}
+
+.Module-DD{
+    width: 310px;
+    margin-left: 35px;
+}
+
+
+.Contract-name{
+    width: 35%;
+}
+
+.Contract-name h4 {
+    margin-left: 40px;
+}
+
+
+.Contract-name-1{
+    width: 35%;
+}
+
+.Contract-name-1 h4 {
+    margin-left: 20px;
+}
+
+
+/* 4th container */
+
+.client-fourth-container{
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+    margin-top: 60px;
+}
+
+.reference-add{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Modal for References */
+
+.modal50 {
+    position: fixed;
+    top: 200px;
+    left: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; 
+    max-width: 600px;
+    min-height: 220px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-content-50{
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+  }
+
+  .close-modal-50{
+    margin-left: 390px;
+    width: 30px;
+    height: 20px;
+    margin-top: 20px;
+  }
+
+  .reference-flex{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ip-field-1{
+    margin-top: 10px;
+  }
+
+  .Referred-by{
+    width: 250px;
+    height: 33px;
+    border-radius: 4px;
+  }
+
+  .ip-field-2{
+    margin-top: 10px;
+  }
+
+  .Service-fee{
+    width: 250px;
+    height: 33px;
+    margin-left: 10px;
+    border-radius: 4px;
+  }
+
+  .ref-bttns{
+    margin-top: 35px;
+  }
+
+  .ref-1{
+    width: 100px;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 5px;
+  }
+
+  .ref-2{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: aquamarine;
+    border-radius: 5px;
+  }
+
+  .endgame{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .last-bttns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-left: 30px;
+    /* background-color: antiquewhite; */
+    width: 85%;
+    height: 80px;
+  }
+
+  .last-submit{
+    width: 80px;
+    margin-left: 450px;
+    margin-right: 20px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    cursor: pointer;
+  }
+
+  .last-cancel{
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    cursor: pointer;
+  }
+
+
+  /* 4th Container CSS */
+
+  .Org-name-1{
+    width: 35%;
+}
+
+.Org-name-1 h4 {
+    margin-left: 40px;
+}
+
+.jsp{
+    margin-left: 80px;
+}
+
+.jsp-fee{
+    width: 200px;
+    margin-left: -10px;
+    height: 33px;
+    border-radius: 4px;
+    border-color: rgb(239, 239, 239);
+}
+
+.net-payement{
+    margin-left: 130px;
+    width: 315px;
+}

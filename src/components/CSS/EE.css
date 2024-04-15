@@ -1,0 +1,11 @@
+.edit{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.eye{
+    cursor: pointer;
+}
+
+.user-data-import tr{
+ border: 1px solid black;
+}

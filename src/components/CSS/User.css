@@ -1,0 +1,243 @@
+.User-main-container{
+    width: 82%;
+    margin-left: 260px;
+    min-height: 1500px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    position: relative;
+    top: 40px;
+    font-family: "Inter", sans-serif;
+    /* background-color: aqua; */
+}
+
+
+.headin-user{
+    /* background-color: #f4f4f4; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 80px;
+    border-radius: 20px;
+}
+
+.back-arrow-user{
+    margin-top: 15px;
+    margin-right: -60px;
+    cursor: pointer;
+}
+
+.headin-user h1 {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+/* Main Container css */
+
+.user-container-user{
+    width: 95%;
+    min-height: 800px;
+    margin-top: 70px;
+    margin-left: 30px;
+    background-color: white;
+    background: linear-gradient(rgb(223, 239, 252), rgb(136, 217, 244), #f4f4f4);
+    border-radius: 20px;  
+}
+
+.user-first-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    /* background-color: red; */
+}
+
+.first-name{
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+    
+}
+
+.first-name h3 {
+    margin-left: 60px;
+}
+
+.First-name-please{
+    width: 400px;
+    height: 35px;
+    margin-left: 50px;
+    border-radius: 4px;
+}
+
+.second-name{
+    /* background-color: rgb(91, 225, 122); */
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+    
+}
+
+.second-name-please{
+    width: 400px;
+    height: 35px;
+    margin-left: 120px;
+    border-radius: 4px;
+
+}
+
+.second-name h3 {
+    margin-left: 128px;
+}
+
+
+/* 2nd Container */
+
+.user-second-container{
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+}
+
+.user-email{
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.user-email h3 {
+    margin-left: 60px;
+}
+
+.Email-name-please{
+    width: 400px;
+    height: 35px;
+    margin-left: 50px;
+    border-radius: 4px;
+}
+
+.Amazon-Vc{
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.Portal-dd{
+    width: 410px;
+    height: 35px;
+    margin-left: 120px;
+    border-radius: 4px;
+
+}
+
+.Amazon-Vc h3 {
+    margin-left: 128px;
+}
+
+
+/* 3rd Container Css */
+
+.user-third-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.modle-permission{
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.modle-permission h3 {
+    margin-left: 60px;
+}
+
+.Menu-dd{
+    width: 410px;
+    height: 35px;
+    margin-left: 50px;
+    border-radius: 4px;
+
+}
+
+.radio-group{
+    margin-top: 25px;
+    margin-left: 130px;
+}
+.radio-group h3 {
+    margin-left: 10px;
+}
+
+.radio-btns{
+    margin-top: 10px;
+    
+}
+
+.radio-btns-1{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+
+
+
+
+.radio-group-i{
+    margin-top: 25px;
+    margin-left: 130px;
+}
+.radio-group-i h3 {
+    margin-left: 10px;
+}
+
+.radio-btns-i{
+    margin-top: 10px;
+    
+}
+
+.radio-btns-1-i{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+
+
+.user-buttons{
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+    width: 60%;
+    margin-left: 200px;
+    justify-content: center;
+    margin-top: 80px;
+    height: 100px;
+}
+
+.user-submit{
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+.user-cancel{
+    width: 80px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aquamarine;
+}

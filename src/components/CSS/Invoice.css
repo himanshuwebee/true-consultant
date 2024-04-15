@@ -1,0 +1,105 @@
+.invoice-container {
+  background: linear-gradient(rgb(246, 221, 225), rgb(255, 198, 207), #f4f4f4);
+  width: 82%;
+  margin-left: 260px;
+  min-height: 1950px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  position: relative;
+  top: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.invoice-container2 {
+  display: flex;
+  flex-direction: row;
+  /* background-color: blueviolet; */
+}
+
+.invoice-container2 h1 {
+  margin-left: 50px;
+  margin-top: 43px;
+}
+
+.dropdown-inventory-invoice {
+  /* background-color: blue; */
+  width: 35%;
+  margin-top: 50px;
+  margin-left: 570px;
+}
+
+.dropdown-vendor-invoice {
+  width: 50%;
+  /* background-color: aqua; */
+}
+
+.button-container-1 {
+  /* background-color: aqua; */
+  width: 100%;
+  min-height: 50px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.invoice-button-1 {
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.invoice-button-4 {
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.invoice-button-2 {
+  margin-left: 850px;
+  margin-top: 15px;
+  /* text-decoration: none;
+  color: #000000; */
+}
+
+.invoice-button-3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  /* text-decoration: none;
+  color: #000000; */
+}
+
+.table-container-invoice {
+  width: 100%;
+  min-height: 500px;
+  overflow-x: auto;
+  margin-top: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  text-align: left;
+}
+
+.tat {
+  margin-left: 100px;
+}
+
+.invoice-prev-button {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.invoice-next-button {
+  margin-left: 5px;
+}
