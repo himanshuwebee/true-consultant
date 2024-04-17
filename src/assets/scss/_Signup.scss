@@ -1,0 +1,41 @@
+.signup{
+  height: 100vh;
+  overflow: hidden;
+   
+   @media(max-width: 1024px){
+    overflow: auto;
+   }
+    &-img{
+     
+       img{
+        height: 100vh; 
+       }
+    }
+    &-content{
+      text-align: center;
+      @include flex_center;
+      height: 100vh;
+      @media(max-width:1024px){
+        margin: 0 $spacing_xmd !important;
+      }
+    
+      &-item{
+        max-width: 400px;
+        width: 100%;
+        margin: $spacing_md 0;
+        @media(max-width:1024px){
+          margin: 0;
+        }
+      }
+
+      &-top{
+        .logo{
+          width: 100px;
+        }
+      }
+
+      &-form{
+        margin-top: $spacing_md;
+      }
+    }
+}

@@ -1,0 +1,32 @@
+.signup{
+    & .btn{
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 10px 25px;
+            &:hover, &:focus, &:active {
+                color: $white;
+                background-color: $primary;
+                border: 1px solid $primary;
+                box-shadow: none;
+            }
+            
+        &-primary{
+            background-color: $secondary;
+            border: 1px solid $secondary;
+            border-radius: $border_radius_sm;
+            color: $white;
+           
+        }
+        &-info{
+            background-color: $white;
+            border: 1px solid $info;
+            color: $text_light;
+            border-radius: $border_radius_lg;
+           
+            img{
+                width: 20px;
+            }
+        }
+    }
+}

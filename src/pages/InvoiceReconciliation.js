@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Select from "react-select";
 import { NavLink } from "react-router-dom";
-import "./CSS/Invoice.css";
+import "../components/CSS/Invoice.css";
 
 const pageSize = 10;
 

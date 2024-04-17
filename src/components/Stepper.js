@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import Confetti from "react-confetti";
 import "./CSS/Stepper.css";
-import AwardSvg from "./Png/img1.png";
+import AwardSvg from "../assets/images/img1.png";
 
 const fixedCheckpoints = [
   { name: "Stage 1", coordinates: { x: 10, y: 10 }, status: "ember" },
