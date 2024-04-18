@@ -16,8 +16,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import SsidChartIcon from '@mui/icons-material/SsidChart';
+import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
+import PieChartOutlineIcon from '@mui/icons-material/PieChartOutline';
+import ScoreOutlinedIcon from '@mui/icons-material/ScoreOutlined';
 
 const drawerWidth = 240;
 
@@ -98,6 +100,8 @@ export default function MiniDrawer() {
     setOpen(false);
   };
 
+  const iconArray = [<DashboardOutlinedIcon />, <SsidChartIcon />, <PieChartOutlineIcon  />, <ScoreOutlinedIcon />];
+
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -127,9 +131,9 @@ export default function MiniDrawer() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
+        <List className='sidebar-list'>
           {['Dashboard', 'OverBilling', 'Shoratge Claim', 'Financial Scorecard'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+            <ListItem key={text} disablePadding sx={{ display: 'block' }} className='sidebar-list-item'>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -137,14 +141,14 @@ export default function MiniDrawer() {
                   px: 2.5,
                 }}
               >
-                <ListItemIcon
+                <ListItemIcon className='sidebar-list-icon'
                   sx={{
                     minWidth: 0,
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {iconArray[index]}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
@@ -154,7 +158,6 @@ export default function MiniDrawer() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-       
       </Box>
     </Box>
   );

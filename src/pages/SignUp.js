@@ -1,21 +1,22 @@
 import React from 'react';
-import { Container,Grid, Typography, TextField, FormControl, Button } from '@mui/material';
-import login from '../assets/images/login-image.jpg';
+import { Container,Grid, Box, Typography, TextField, FormControl, Button } from '@mui/material';
 import logo from '../assets/images/logo.png';
+import login from '../assets/images/login-image.jpg';
 import Google from '../assets/images/google.png';
 import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   return (
-    <div className="signup">
-      <Container maxWidth="lg" className='ps-0 pe-md-0'>
-        <Grid container spacing={2} xs={{ alignItems: 'center' }}>
-          <Grid item xs={6}>
+    <Box className="signup">
+      <Container maxWidth="lg">
+        <Grid container spacing={2} justifyContent="center" xs={{ alignItems: 'center'}}>
+          <Grid item>
             <div className="signup-img">
               <img src={login} alt='signup-image' />
             </div>
           </Grid>
-          <Grid item xs={6} className='signup-content'>
+          
+          <Grid item className='signup-content'>
             <div className="signup-content-item">
               <div className="signup-content-top">
                 <Link to='/'>
@@ -24,6 +25,7 @@ const SignUp = () => {
                 <Typography variant="h3" className='title text-secondary'>Signup</Typography>
                 <Typography variant="body2">Lorem ipsum dolor sit amet.</Typography>
               </div>
+
               <div className='signup-content-form'>
                 <FormControl fullWidth>
                   <div className='mb-3'>
@@ -51,7 +53,7 @@ const SignUp = () => {
           </Grid>
         </Grid>
       </Container>
-    </div>
+    </Box>
   );
 }
 
