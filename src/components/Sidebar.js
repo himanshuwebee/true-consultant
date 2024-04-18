@@ -1,69 +1,164 @@
-import React from "react";
-import "./CSS/Sidebar.css";
-import '@fortawesome/fontawesome-svg-core/styles.css';
-import { NavLink } from 'react-router-dom'
-import { BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsListCheck, BsMenuButtonWideFill, BsBook,BsFillFileTextFill , BsFillHouseDoorFill, BsFillExclamationDiamondFill } from 'react-icons/bs';
+import * as React from 'react';
+import { styled, useTheme } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import MuiDrawer from '@mui/material/Drawer';
+import MuiAppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import List from '@mui/material/List';
+import CssBaseline from '@mui/material/CssBaseline';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import SsidChartIcon from '@mui/icons-material/SsidChart';
+import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
+import PieChartOutlineIcon from '@mui/icons-material/PieChartOutline';
+import ScoreOutlinedIcon from '@mui/icons-material/ScoreOutlined';
 
+const drawerWidth = 240;
 
-function Sidebar() {
+const openedMixin = (theme) => ({
+  width: drawerWidth,
+  transition: theme.transitions.create('width', {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.enteringScreen,
+  }),
+  overflowX: 'hidden',
+});
+
+const closedMixin = (theme) => ({
+  transition: theme.transitions.create('width', {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.leavingScreen,
+  }),
+  overflowX: 'hidden',
+  width: `calc(${theme.spacing(7)} + 1px)`,
+  [theme.breakpoints.up('sm')]: {
+    width: `calc(${theme.spacing(8)} + 1px)`,
+  },
+});
+
+const DrawerHeader = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+  padding: theme.spacing(0, 1),
+
+  ...theme.mixins.toolbar,
+}));
+
+const AppBar = styled(MuiAppBar, {
+  shouldForwardProp: (prop) => prop !== 'open',
+})(({ theme, open }) => ({
+  zIndex: theme.zIndex.drawer + 1,
+  transition: theme.transitions.create(['width', 'margin'], {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.leavingScreen,
+  }),
+  ...(open && {
+    marginLeft: drawerWidth,
+    width: `calc(100% - ${drawerWidth}px)`,
+    transition: theme.transitions.create(['width', 'margin'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  }),
+}));
+
+const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
+  ({ theme, open }) => ({
+    width: drawerWidth,
+    flexShrink: 0,
+    whiteSpace: 'nowrap',
+    boxSizing: 'border-box',
+    ...(open && {
+      ...openedMixin(theme),
+      '& .MuiDrawer-paper': openedMixin(theme),
+    }),
+    ...(!open && {
+      ...closedMixin(theme),
+      '& .MuiDrawer-paper': closedMixin(theme),
+    }),
+  }),
+);
+
+export default function MiniDrawer() {
+  const theme = useTheme();
+  const [open, setOpen] = React.useState(false);
+
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setOpen(false);
+  };
+
+  const iconArray = [<DashboardOutlinedIcon />, <SsidChartIcon />, <PieChartOutlineIcon  />, <ScoreOutlinedIcon />];
+
   return (
-    <div className="sidebar">
-      <div className='sidebar-title'>
-        <div className='sidebar-brand'>
-          <BsFillExclamationDiamondFill className='icon_header' /> JUPITER
-          
-        </div>
-      </div>
-
-      <ul className='sidebar-list'>
-        <li className='sidebar-list-item'>
-          <NavLink to="/"> 
-            <BsFillHouseDoorFill className='icon' /> Home
-          </NavLink>
-        </li>
-        <li className='sidebar-list-item'>
-          <NavLink to="/Overbilling"> 
-            <BsGrid1X2Fill className='icon' /> OverBilling
-          </NavLink>
-        </li>
-        <li className='sidebar-list-item'>
-          <NavLink to="/Shortage"> 
-            <BsFillArchiveFill className='icon' /> Shortage
-          </NavLink>
-        </li>
-        <li className='sidebar-list-item'>
-          <NavLink to="/Financial"> 
-            <BsFillFileTextFill className='icon' /> Financial Scorecard
-          </NavLink>
-        </li>
-        <li className='sidebar-list-item'>
-          <NavLink to="/priceClaim"> 
-            <BsFillGrid3X3GapFill className='icon' />Price Claim
-          </NavLink>
-        </li>
-        <li className='sidebar-list-item'>
-          <NavLink to="/Invoice"> 
-            <BsListCheck className='icon' /> Invoice Reconciliation
-          </NavLink>
-        </li>
-        <li className='sidebar-list-item'>
-          <NavLink to="/Ops"> 
-            <BsMenuButtonWideFill className='icon' />OPS Chargebacks
-          </NavLink>
-        </li>
-        <li className='sidebar-list-item'>
-          <NavLink to="/Coming"> 
-          <BsBook className='icon' /> Reports
-          </NavLink>
-        </li>
-        <li className='sidebar-list-item'>
-          <NavLink to="/ManageUser"> 
-          <BsPeopleFill className='icon' /> Manage Users
-          </NavLink>
-        </li>
-      </ul>
-    </div>
+    <Box sx={{ display: 'flex' }}>
+      <CssBaseline />
+      <AppBar position="fixed" open={open}>
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            sx={{
+              marginRight: 5,
+              ...(open && { display: 'none' }),
+            }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" noWrap component="div">
+            Mini variant drawer
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Drawer variant="permanent" open={open}>
+        <DrawerHeader>
+          <IconButton onClick={handleDrawerClose}>
+            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+          </IconButton>
+        </DrawerHeader>
+        <Divider />
+        <List className='sidebar-list'>
+          {['Dashboard', 'OverBilling', 'Shoratge Claim', 'Financial Scorecard'].map((text, index) => (
+            <ListItem key={text} disablePadding sx={{ display: 'block' }} className='sidebar-list-item'>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon className='sidebar-list-icon'
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  {iconArray[index]}
+                </ListItemIcon>
+                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+      </Drawer>
+      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <DrawerHeader />
+      </Box>
+    </Box>
   );
 }
-
-export default Sidebar;

@@ -1,0 +1,14 @@
+div.form{
+    &-control{
+       input{
+        padding: $spacing_xs $spacing_sm;
+        border: 1px solid $form;
+        border-radius: $border_radius_xsm;
+        background-color: $form;
+        color: $dark;
+        font-size: 1rem;
+        line-height: normal;
+        text-align: left;
+       }
+    }
+}

@@ -1,0 +1,149 @@
+/* --- Body Style --- */
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    color: $dark;
+    margin: 0;
+    padding: 0;
+}
+/* --- Font Weight --- */
+b{
+    font-weight: bold;
+}
+/* --- Anchor Styles --- */
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/* --- List Style --- */
+ul {
+    &.list {
+        /* --- List None Style --- */
+        &-none {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+/* -- Title Style --- */
+ h1, h2, h3, h4, h5 {
+    font-weight: 500;
+    margin-bottom: $spacing_xs;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    @media (max-width: 767px) {
+        font-size: 50%;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    @media (max-width: 991px) {
+        font-size: 2.4rem;
+    }
+    @media (max-width: 767px) {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+    &.title{
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: $spacing_xs;
+        font-weight: 500;
+    }
+    @media (max-width: 991px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 767px) {
+        font-size: 1.8rem;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+    @media (max-width: 991px) {
+        font-size: 1.8rem;
+    }
+    @media (max-width: 767px) {
+        font-size: 1.6rem;
+    }
+}
+
+h5 {
+    font-size: 1.6rem;
+    @media (max-width: 767px) {
+        font-size: 1.3rem;
+    }
+}
+
+h6 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    @media (max-width: 767px) {
+        font-size: 1.1rem;
+    }
+}
+
+/* --- Section Space --- */
+.space {
+    &-sec {
+        padding-top: $spacing_xl;
+        padding-bottom: $spacing_xl;
+        @media (max-width: 991px) {
+            padding-top: $spacing_lg;
+            padding-bottom: $spacing_lg;
+        }
+        @media (max-width: 767px) {
+            padding-top: $spacing_md;
+            padding-bottom: $spacing_md;
+        }
+    }
+    &-top {
+        &-btn {
+            margin-top: $spacing_lg;
+        }
+    }
+}
+/* --- Spacing ---*/
+.ps-0{
+    padding-left: 0 !important;
+}
+@media(max-width: 1024px){
+    .pe-md-0{
+        padding-right: 0 !important;
+    }
+}
+.pe-3{
+   padding-right: 1rem;
+}
+.mt-1{
+    margin-top: 8px;
+}
+.mb-3{
+    margin-bottom: 1rem;
+}
+.mb-4{
+    margin-bottom: 1.5rem;
+}
+/* --- Text Style --- */
+.text-end{
+    text-align: end;
+}
+/*--- Field Set --- */
+fieldset{
+    border: none !important;
+}
+@media(min-width: 1400px){
+    .css-1oqqzyl-MuiContainer-root{
+        max-width: 1600px !important;
+    }
+}

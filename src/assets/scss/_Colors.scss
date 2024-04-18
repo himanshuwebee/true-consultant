@@ -1,0 +1,40 @@
+$primary: #5785D0;
+$secondary: #183d72;
+$accent: #FF8820;
+$dark: #3A3541;
+$text_light: #89868D;
+$text_disable: #B4B2B7;
+$white: #fff;
+$background: #F4F5F9;
+$background_light: #E7E7F4;
+$border: #DBDCDE;
+$success: #00A15D;
+$danger: #F93131;
+$warning: #FFAB00;
+$info: #DDDDDD;
+$primary_light: #DAE8FF;
+$accent_light: #FFE2CB;
+$success_light: #C9F0DA;
+$danger_light: #F9CCCC;
+$warning_light: #FFEECC;
+$form: rgba(176, 186, 195, 0.4);
+
+/* --- Shade Color --- */
+
+$primary_shade: #18244d;
+$secondary_shade: #1e3e67;
+$blue_shade: #285a9e;
+$light_blue_shade: #5c84c3;
+$accent_shade: #f48124;
+$accent_light_shade: #f89c53;
+$red_shade: #dd222b;
+
+/*--- Other Color --- */
+.text{
+    &-accent{
+        color: $accent;
+    }
+    &-secondary{
+        color: $secondary;
+    }
+}

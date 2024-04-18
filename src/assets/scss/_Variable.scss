@@ -1,0 +1,70 @@
+$main-font: "Lato", sans-serif; 
+
+/* --- Transition Ease --- */
+$ease_03: all 0.3s ease;
+$ease_05: all 0.5s ease;
+
+/* --- Border Radius --- */
+$border_radius: 50%;
+$border_radius_xs: 4px;
+$border_radius_xsm: 10px;
+$border_radius_sm: 15px;
+$border_radius_lg: 50px;
+
+/* --- Spacing --- */
+$spacing_xs: 10px;
+$spacing_s: 15px;
+$spacing_sm: 20px;
+$spacing_xmd: 24px;
+$spacing_md: 30px;
+$spacing_lg: 50px;
+$spacing_xl: 70px;
+$spacing_xll: 90px;
+
+/* --- Mixin --- */
+
+/* --- Flex Center --- */
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex_center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin inline_flex_center {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Flex Justify Center --- */
+@mixin flex_justify_center {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Flex Align Center --- */
+@mixin flex_align_center {
+    display: flex;
+    align-items: center;
+}
+
+/* --- Flex Align End --- */
+@mixin flex_align_end {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+/* --- Flex Direction Column --- */
+@mixin flex_direction_column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
