@@ -165,7 +165,7 @@ h6 {
 }
 
 .ps-5 {
-  padding-left: 50px;
+  padding-left: 37px;
 }
 
 .mt-1 {
@@ -214,6 +214,11 @@ svg.icons {
 
 .form-select svg.MuiSelect-iconOutlined {
   color: #fff !important;
+}
+
+/*--- Content --- */
+.content {
+  width: calc(100% - 240px);
 }
 
 .signup {
@@ -384,6 +389,21 @@ div .nav-header-icon:hover svg {
 }
 div .nav-header-icon svg {
   color: #183d72;
+}
+
+.overbilling {
+  padding-top: 100px;
+}
+.overbilling-header {
+  background-image: linear-gradient(to left top, #1e5aa3, #2f64ac, #3e6fb5, #4b7abf, #5885c8);
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.overbilling-header-image {
+  width: 60px;
+  text-align: end;
 }
 
 /*# sourceMappingURL=style.css.map */
