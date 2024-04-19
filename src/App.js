@@ -22,33 +22,31 @@ import OverBilling from "./pages/overbilling/OverBilling";
 
 
 function App() {
+  const sidebarWidth = 240; 
   return (
     <Router>
-      <div className="App">
+    <div className="App" style={{ display: "flex" }}>
       <Sidebar />
-      <div className="App">
-              <div className="content">
-                  <Routes>
-                    <Route path="/dashboard" element={<Home />} />
-                    <Route path="/overbilling" element={<OverBilling />} />
-                    <Route path="/Ops" element={<OpsChargeback />} />
-                    <Route path="/Financial" element={<Financial />} />
-                    <Route path="/PriceClaim" element={<PriceClaim />} />
-                    <Route path="/Invoice" element={<InvoiceReconciliation />}/>
-                    <Route path="/UploadLog" element={<UploadLog />} />
-                    <Route path="/JobStatus" element={<JobStatus />} />
-                    <Route path="/Client" element={<Client />} />
-                    <Route path="/User" element={<User />} />
-                    <Route path="/Group" element={<Group />} />
-                    <Route path="/ManageUser" element={<ManageUser />} />
-                    <Route path="/Coming" element={<CommingSoon />} />
-                    <Route path="/Test" element={<Test />} />
-                  </Routes>
-              </div>
-            </div>
-         
+      <div className="content" style={{ width: `calc(100% - ${sidebarWidth}px)` }}>
+        <Routes>
+          <Route path="/dashboard" element={<Home />} />
+          <Route path="/overbilling" element={<OverBilling />} />
+          <Route path="/Ops" element={<OpsChargeback />} />
+          <Route path="/Financial" element={<Financial />} />
+          <Route path="/PriceClaim" element={<PriceClaim />} />
+          <Route path="/Invoice" element={<InvoiceReconciliation />} />
+          <Route path="/UploadLog" element={<UploadLog />} />
+          <Route path="/JobStatus" element={<JobStatus />} />
+          <Route path="/Client" element={<Client />} />
+          <Route path="/User" element={<User />} />
+          <Route path="/Group" element={<Group />} />
+          <Route path="/ManageUser" element={<ManageUser />} />
+          <Route path="/Coming" element={<CommingSoon />} />
+          <Route path="/Test" element={<Test />} />
+        </Routes>
       </div>
-    </Router>
+    </div>
+  </Router>
   );
 }
 

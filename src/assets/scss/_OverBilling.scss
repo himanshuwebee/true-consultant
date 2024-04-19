@@ -1,0 +1,14 @@
+.overbilling{
+    padding-top: 100px;
+    &-header{
+        background-image: linear-gradient(to left top, #1e5aa3, #2f64ac, #3e6fb5, #4b7abf, #5885c8);
+        padding: $spacing_sm;
+        color: $white;
+        border-radius: $border_radius_xsm;
+        margin-top: $spacing_md;
+        &-image{
+            width: 60px;
+            text-align: end;
+        }
+    }
+}
