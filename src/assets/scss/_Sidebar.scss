@@ -33,3 +33,38 @@
         }
     }
 }
+/* --- Nav --- */
+div .nav{
+    &-header{
+        &-left{
+            @include flex_center;
+        }
+        &-right{
+            @include flex;
+            justify-content: end;
+            align-items: end;
+            li{
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+            svg{
+                color: $dark;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        &-icon{
+            &:hover{
+                background-color: $primary;
+                svg{
+                    color: $white;
+                }
+            }
+            svg{
+                color: $secondary;
+            }
+        }
+    }
+}

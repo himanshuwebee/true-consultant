@@ -31,7 +31,7 @@ const Login = () => {
                   </div>
                   <div className='mb-3'>
                     <TextField id="" variant="outlined" className='form-control' placeholder="Enter your password here" fullWidth />
-                    <div className='text-end mt-1'>
+                    <div className='mt-1'>
                       <Link to="/" className='text-accent'>Forgot Password</Link>
                     </div>
                   </div>
@@ -41,7 +41,7 @@ const Login = () => {
                   </div>
                   <div className='mb-3'>
                     <Button className=' btn btn-info' fullWidth><img
-                      src={Google} alt='google' className="pe-3" />Sing in with Google</Button>
+                      src={Google} alt='google' className="pe-3" />Sign in with Google</Button>
                   </div>
                   <div>
                     <Typography>Don’t have an account. <Link to="/signup" className='text-accent'>Sign up </Link></Typography>

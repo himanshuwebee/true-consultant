@@ -2,8 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "../src/assets/css/style.css";
 import Sidebar from "./components/Sidebar";
-import OverBilling from "./pages/OverBilling";
-import Shortage from './pages/shortage/Shortage'
 import Financial from "./components/FinancialScoreCard";
 import OpsChargeback from "./pages/OpsChargeback";
 import CommingSoon from "./pages/CommingSoon";
@@ -20,28 +18,23 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import Test from "./components/Test";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
+import OverBilling from "./pages/overbilling/OverBilling";
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/"
-            element={
-              <div className="App">
-                <Sidebar />
-                <div className="content">
+      <Sidebar />
+      <div className="App">
+              <div className="content">
                   <Routes>
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/Overbilling" element={<OverBilling />} />
-                    <Route path="/" element={<Shortage />} />
+                    <Route path="/dashboard" element={<Home />} />
+                    <Route path="/overbilling" element={<OverBilling />} />
                     <Route path="/Ops" element={<OpsChargeback />} />
                     <Route path="/Financial" element={<Financial />} />
                     <Route path="/PriceClaim" element={<PriceClaim />} />
-                    <Route
-                      path="/Invoice"
-                      element={<InvoiceReconciliation />}
-                    />
+                    <Route path="/Invoice" element={<InvoiceReconciliation />}/>
                     <Route path="/UploadLog" element={<UploadLog />} />
                     <Route path="/JobStatus" element={<JobStatus />} />
                     <Route path="/Client" element={<Client />} />
@@ -51,13 +44,9 @@ function App() {
                     <Route path="/Coming" element={<CommingSoon />} />
                     <Route path="/Test" element={<Test />} />
                   </Routes>
-                </div>
               </div>
-            }
-          />
-          <Route path="/signup" element={<SignUpWithoutSidebar />} />
-          <Route path="/login" element={<LoginWithoutSidebar />} />
-        </Routes>
+            </div>
+         
       </div>
     </Router>
   );
