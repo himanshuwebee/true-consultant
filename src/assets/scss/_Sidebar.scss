@@ -1,69 +1,35 @@
-.sidebar{
-    &-list{
-        background-color: $secondary;
-        height: 100%;
-        &-item{
-            color: $white;
-            position: relative;
-            div:first-child{
-                &:after {
-                    content: "";
-                    width: 6px;
-                    height: 100%;
-                    background-color: $white;
-                    position: absolute;
-                    left: -100%;
-                    top: 0;
-                    border-radius: 0 $border_radius_xs;
-                    transition: $ease_05;
-                }
-                &:hover, &:active{
-                    background-color: $primary;
-                    &:after {
-                        left: 0;
-                    }
-
-                }
-            }
-        }
-        &-icon{
-            svg{
-                color: $white;
-            }
-        }
+div .sidebar {
+    > div{
+        border-right:  1px solid #eee;
     }
-}
-/* --- Nav --- */
-div .nav{
-    &-header{
-        &-left{
+    &-list {
+        background-color: $white;
+        height: 100%;
+        
+        &-item {
+            color: $list;
+            position: relative;
             @include flex_center;
-        }
-        &-right{
-            @include flex;
-            justify-content: end;
-            align-items: end;
-            li{
-                &:hover{
-                    background-color: transparent;
+            margin-bottom: 5px;
+            font-family: $main-font;
+            &-icon {
+                min-width: 0;
+                margin-right:  $spacing_s;
+            }
+
+            &:hover {
+                background-color: $hover;
+                color: $hover_color;
+                border-radius: $border_radius_xs;
+
+                .sidebar-list-item-icon {
+                    color: $hover_color;
                 }
             }
-            svg{
-                color: $dark;
-                &:hover{
-                    color: $primary;
-                }
-            }
-        }
-        &-icon{
-            &:hover{
+            &:active{
                 background-color: $primary;
-                svg{
-                    color: $white;
-                }
-            }
-            svg{
-                color: $secondary;
+                border-radius: $border_radius_xs;
+                color: $white;
             }
         }
     }

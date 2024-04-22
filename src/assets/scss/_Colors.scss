@@ -1,11 +1,14 @@
 $primary: #5785D0;
 $secondary: #183d72;
-$accent: #FF8820;
+$accent: #ff871f;
 $dark: #3A3541;
+$list: #2a3547;
 $text_light: #89868D;
 $text_disable: #B4B2B7;
 $white: #fff;
 $background: #F4F5F9;
+$hover: #ecf2ff;
+$hover_color: #5d87ff;
 $background_light: #E7E7F4;
 $border: #DBDCDE;
 $success: #00A15D;
@@ -19,6 +22,8 @@ $danger_light: #F9CCCC;
 $warning_light: #FFEECC;
 $form: rgba(176, 186, 195, 0.4);
 
+
+
 /* --- Shade Color --- */
 
 $primary_shade: #18244d;
@@ -30,11 +35,37 @@ $accent_light_shade: #f89c53;
 $red_shade: #dd222b;
 
 /*--- Other Color --- */
-.text{
+ div .text{
     &-accent{
         color: $accent;
     }
     &-secondary{
         color: $secondary;
+    }
+    &-primary{
+        color: $primary;
+    }
+    &-dark{
+        color: $dark;
+    }
+    &-success{
+        color: $success;
+    }
+    &-white{
+        color: $white;
+    }
+}
+div .bg{
+    &-success{
+        background-color: $success;
+    }
+    &-accent{
+        background-color: $accent;
+    }
+    &-primary{
+        background-color: $primary;
+    }
+    &-info{
+        background-color: $hover;
     }
 }
