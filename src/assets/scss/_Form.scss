@@ -1,13 +1,5 @@
 div .form{
     &-control{
-        .MuiSelect-select{
-            border-radius: $border_radius_xs;
-            padding: 6px $spacing_s;
-            background-color: $form;
-            color: $dark;
-            @include flex_align_center;
-            column-gap: 5px;
-        }
        input{
         padding: $spacing_xs $spacing_sm;
         border: 1px solid $form;
@@ -18,21 +10,12 @@ div .form{
         text-align: left;
         min-height: 30px;
        }
+       &-search{
+        background-color: $hover;
+        border-radius: $border_radius_xs;
+        padding:  4px 0;
+       }
       
        
-    }
-    &-select{
-        & .MuiSelect-select{
-            width: 60px;
-            border-radius: $border_radius_xs;
-            padding: 6px $spacing_s;
-            background-color: $secondary;
-            color: $white;
-            @include flex_align_center;
-            column-gap: 5px;
-            svg.MuiSelect-iconOutlined{
-                color: $white !important;
-            }
-        }
     }
 }

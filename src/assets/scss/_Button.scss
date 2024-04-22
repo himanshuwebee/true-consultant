@@ -1,36 +1,51 @@
-.signup{
-    & .btn{
-            text-transform: capitalize;
-            font-weight: 500;
-            font-size: 16px;
-            padding: 10px 25px;
-            
-        &-primary{
-            background-color: $secondary;
-            border: 1px solid $secondary;
-            border-radius: $border_radius_xs;
+div .btn{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 25px;
+    
+    &-primary{
+        background-color: $secondary;
+        border: 1px solid $secondary;
+        border-radius: $border_radius_xs;
+        color: $white;
+        &:hover, &:focus, &:active {
             color: $white;
-            &:hover, &:focus, &:active {
-                color: $white;
-                background-color: $primary;
-                border: 1px solid $primary;
-                box-shadow: none;
-            }
-           
+            background-color: $primary;
+            border: 1px solid $primary;
+            box-shadow: none;
         }
-        &-info{
-            background-color: $white;
-            border: 1px solid $info;
-            color: $text_light;
-            border-radius: $border_radius_xs;
-            img{
-                width: 20px;
-            }
-            &:hover, &:focus, &:active {
-                color: $primary;
-                border: 1px solid $primary;
-                box-shadow: none;
-            }
+    
+    }
+    &-info{
+        background-color: $white;
+        border: 1px solid $info;
+        color: $text_light;
+        border-radius: $border_radius_xs;
+        img{
+            width: 20px;
+        }
+        &:hover, &:focus, &:active {
+            color: $primary;
+            border: 1px solid $primary;
+            box-shadow: none;
+        }
+    }
+    &-sm{
+        padding: 4px 6px;
+        font-size: 8px;
+        background-color: $primary;
+        border: 1px solid $primary;
+        border-radius: $border_radius_xs;
+        text-transform: capitalize;
+        color: $white;
+        @include flex_align_center;
+        column-gap: 10px;
+        svg{
+            font-size: 13px;
+        }
+        &:hover{
+            color: $dark;
         }
     }
 }

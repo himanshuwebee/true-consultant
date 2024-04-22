@@ -1,0 +1,42 @@
+.card table {
+	margin-top: $spacing_sm;
+
+	thead {
+		border-radius: $border_radius_xs;
+
+		th {
+			padding: 8px;
+			font-weight: 600;
+		}
+	}
+	tbody{
+		tr{
+		  td{
+			font-weight: 600;
+		  }
+		  &:nth-child(1){
+			td:first-child{
+				color: $success;
+			}
+		  }
+		  &:nth-child(2){
+			td:first-child{
+				color: $secondary;
+			}
+		  }
+		  &:nth-child(3){
+			td:first-child{
+				color: $accent;
+			}
+		  }
+		  &:nth-child(4){
+			td:first-child{
+				color: $warning;
+			}
+		  }
+		  &:nth-child(even){
+			border: 1px solid $hover;
+		  }
+		}
+	}
+}
